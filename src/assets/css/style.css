@@ -43,7 +43,10 @@
     border: 2px solid #444;
 }
 .ui.header.custom-header { 
-    margin: 15px 0;
+    margin: 15px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .slick-arrow:before {
     color: #000;
