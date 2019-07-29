@@ -58,7 +58,7 @@ const RelatedComponent = ( props ) => {
                                 <img className='' src={ `${imgUrl}${el.poster_path}` } alt='img' style={{width: 355,height: 355}}/>
                             </div>
                             <div className="content">
-                                <div className="ui header custom-header">{ el.original_title }</div>
+                                <div className="ui header custom-header" title={ el.original_title }>{ el.original_title }</div>
                                 </div>
                             <div className="">
                                 <button className="fluid ui button">Play</button>
