@@ -36,10 +36,8 @@
 }
 .main {
     text-align: center;
-    padding: 0 10px;
 }
 .card {
-    padding: 10px;
     border: 2px solid #444;
 }
 .ui.header.custom-header { 
@@ -62,5 +60,25 @@
     }
     .ui .column .image img {
         width: 100%;
+    }
+    .card,
+    .main {
+        width: 95%;
+        margin: auto;
+    }
+    .slick-prev {
+        left: -10px;
+    }
+    .slick-next {
+        right: -10px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .main {
+        padding: 0 10px;
+    }
+    .card {
+        padding: 10px;
     }
 }
