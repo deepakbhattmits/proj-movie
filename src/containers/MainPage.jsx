@@ -46,6 +46,7 @@ class MainPage extends Component {
                         relatedMovies = { this.props.relatedMovies }
                         handleClick= { this.handleClick }
                     />
+                    <hr />
           
             </Fragment>
         )
