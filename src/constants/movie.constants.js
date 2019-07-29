@@ -1,0 +1,7 @@
+export const movieConstants = {
+    GET_MOVIE : 'GET_MOVIE',
+    GET_RELATED_MOVIE: 'GET_RELATED_MOVIE', 
+    ADD_FAVORITE: 'ADD_FAVORITE', 
+    REMOVE_FAVORITE: 'REMOVE_FAVORITE', 
+   
+}

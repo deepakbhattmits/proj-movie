@@ -1,0 +1,63 @@
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+.ui.secondary.menu {
+    background-color: aqua;
+    color: #fff;
+}
+.ui.custom-section-2 {
+    margin-top: 5px;
+}
+.ui .header.custom-header h3 {
+    display: inline;
+}
+.ui .header.custom-header .custom-star {
+    margin-left: 10px;
+}
+.ui.list .header.custom-header {
+    display: flex;
+    align-items: baseline;
+}
+.ui.grid .column.custom {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0;
+    padding-right: 0;
+}
+.column.custom-width {
+    margin-right: 10px;
+}
+.column.custom-width .image img {
+    width: 100%;
+}
+.ui .column .image {
+    text-align: right;
+}
+.main {
+    text-align: center;
+    padding: 0 10px;
+}
+.card {
+    padding: 10px;
+    border: 2px solid #444;
+}
+.ui.header.custom-header { 
+    margin: 15px 0;
+}
+.slick-arrow:before {
+    color: #000;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .ui[class*="four column"].grid>.column:not(.row),
+    .ui[class*="four column"].grid>.row>.column.custom-width {
+        width: 48%;
+    }
+    button.ui.button {
+        margin: 1px;
+    }
+    .ui .column .image img {
+        width: 100%;
+    }
+}
