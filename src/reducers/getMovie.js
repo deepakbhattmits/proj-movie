@@ -22,7 +22,7 @@ export const getMovie = ( state ={ initialState }, action ) => {
             }     
         case movieConstants.REMOVE_FAVORITE:
                 localStorage.removeItem('movieData');
-                return Object.assign({},state, {addFMovies: {...state.addFMovies, [action.payload.id]: action.payload } });
+                return Object.assign({},state, {addFMovies: {} });
         default: 
             return state ;
     }
