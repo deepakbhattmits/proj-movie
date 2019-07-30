@@ -40,9 +40,6 @@
     -o-animation:      hoverAnimation 2s infinite; /* Opera 12+ */
     animation:         hoverAnimation 2s infinite; /* IE 10+, Fx 29+ */
 }
-.main .ui.button {
-    width: 200px;
-}
 
 .main {
     text-align: center;
@@ -71,7 +68,13 @@
     width: 100%;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-
+    .main .ui.button {
+        width: 95%;
+    }
+    .main .image img {
+        width: 95%;
+        margin: auto;
+    }
     .ui[class*="four column"].grid>.column:not(.row),
     .ui[class*="four column"].grid>.row>.column.custom-width {
         width: 48%;
@@ -96,6 +99,14 @@
 }
 
 @media screen and (min-width: 769px) {
+    .main .ui.button {
+        width: 200px;
+    }
+    .main .image img {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
     .main {
         padding: 0 10px;
     }
