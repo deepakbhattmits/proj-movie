@@ -2,7 +2,7 @@ import React,{ Fragment } from 'react';
 
 const MainComponent = ( props ) => {
     const imgUrl = 'https://image.tmdb.org/t/p/w300';
-    const imgUrl1 = 'https://image.tmdb.org/t/p/w400';
+    const imgUrl1 = 'https://image.tmdb.org/t/p/w500';
     if(props.movies === undefined ) {
         return <div>Loading...</div>
     }

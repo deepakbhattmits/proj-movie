@@ -39,6 +39,14 @@
 }
 .card {
     border: 2px solid #444;
+    border-radius: 5px;
+}
+.card:hover {
+    cursor: pointer;
+    -webkit-animation: hoverAnimation 2s infinite; /* Safari 4+ */
+    -moz-animation:    hoverAnimation 2s infinite; /* Fx 5+ */
+    -o-animation:      hoverAnimation 2s infinite; /* Opera 12+ */
+    animation:         hoverAnimation 2s infinite; /* IE 10+, Fx 29+ */
 }
 .ui.header.custom-header { 
     margin: 15px 5px;
@@ -47,7 +55,10 @@
     text-overflow: ellipsis;
 }
 .slick-arrow:before {
-    color: #000;
+    color: black;
+}
+.image img {
+    width: 100%;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
@@ -81,4 +92,33 @@
     .card {
         padding: 10px;
     }
+    
 }
+@-webkit-keyframes hoverAnimation {
+    0%   { box-shadow: inset 0 0 2px red }
+    20%   { box-shadow: inset 0 0 4px red }
+    40%   { box-shadow: inset 0 0 6px red }
+    60%   { box-shadow: inset 0 0 8px red }
+    80%   { box-shadow: inset 0 0 10px red }
+    100%   { box-shadow: inset 0 0 12px red }
+  }
+  @-moz-keyframes hoverAnimation {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes hoverAnimation {
+    0%   { box-shadow: inset 0 0 2px red }
+    20%   { box-shadow: inset 0 0 4px red }
+    40%   { box-shadow: inset 0 0 6px red }
+    60%   { box-shadow: inset 0 0 8px red }
+    80%   { box-shadow: inset 0 0 10px red }
+    100%   { box-shadow: inset 0 0 12px red }
+  }
+  @keyframes hoverAnimation {
+    0%   { box-shadow: inset 0 0 2px red }
+    20%   { box-shadow: inset 0 0 4px red }
+    40%   { box-shadow: inset 0 0 6px red }
+    60%   { box-shadow: inset 0 0 8px red }
+    80%   { box-shadow: inset 0 0 10px red }
+    100%   { box-shadow: inset 0 0 12px red }
+  }

@@ -6,6 +6,7 @@ import { getMovies, getRelatedMovies, addTofavorites, removeFromfavorites } from
 class MainPage extends Component {
     state= { 
         className: {  },
+        age: 30,
      }
     
     componentDidMount () {
@@ -26,14 +27,11 @@ class MainPage extends Component {
             this.props.removeFromfavorites ( this.state.className );
 
         } 
-    }
-   
-        
+    }        
     render() {
         return (
             <Fragment>
-          
-                    <MainComponent 
+                <MainComponent 
                         movies={ this.props.movies }
                         addToFavorite= { this.addToFavorite }
                         className={ this.state.className }
