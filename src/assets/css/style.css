@@ -34,6 +34,16 @@
 .ui .column .image {
     text-align: right;
 }
+.ui.button:hover {
+    -webkit-animation: hoverAnimation 2s infinite; /* Safari 4+ */
+    -moz-animation:    hoverAnimation 2s infinite; /* Fx 5+ */
+    -o-animation:      hoverAnimation 2s infinite; /* Opera 12+ */
+    animation:         hoverAnimation 2s infinite; /* IE 10+, Fx 29+ */
+}
+.main .ui.button {
+    width: 200px;
+}
+
 .main {
     text-align: center;
 }
@@ -42,7 +52,7 @@
     border-radius: 5px;
 }
 .card:hover {
-    cursor: pointer;
+     cursor: pointer;
     -webkit-animation: hoverAnimation 2s infinite; /* Safari 4+ */
     -moz-animation:    hoverAnimation 2s infinite; /* Fx 5+ */
     -o-animation:      hoverAnimation 2s infinite; /* Opera 12+ */

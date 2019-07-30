@@ -55,13 +55,13 @@ const RelatedComponent = ( props ) => {
                 <div className="main"  key={ i } >
                     <div id={ el.id } className="card" onClick={ props.handleClick }>
                         <div className="ui image">
-                                <img className='' src={ `${imgUrl}${el.poster_path}` } alt='img' style={{width: 355,height: 355}}/>
+                                <img className='' src={ `${imgUrl}${el.poster_path}` } alt='img' style={{width: 200,height: 200}}/>
                             </div>
                             <div className="content">
                                 <div className="ui header custom-header" title={ el.original_title }>{ el.original_title }</div>
                                 </div>
                             <div className="">
-                                <button className="fluid ui button">Play</button>
+                                <button className="ui button">Play</button>
                             </div>
                         
                     </div>
